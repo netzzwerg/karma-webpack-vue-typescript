@@ -1,0 +1,24 @@
+{
+  "name": "karma-webpack-vue-typescript",
+  "version": "1.0.0",
+  "description": "karma-webpack-vue-typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netzzwerg/karma-webpack-vue-typescript.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/netzzwerg/karma-webpack-vue-typescript/issues"
+  },
+  "homepage": "https://github.com/netzzwerg/karma-webpack-vue-typescript#readme",
+  "devDependencies": {
+    "ts-loader": "^2.1.0",
+    "typescript": "^2.3.4",
+    "webpack": "^2.6.1"
+  }
+}
