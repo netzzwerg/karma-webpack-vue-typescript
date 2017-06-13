@@ -16,13 +16,26 @@ module.exports = {
       'node_modules' // for chai and sinon
     ]
   },
-  devtool: '#eval-source-map',
+  devtool: '#inline-source-map',
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
+        test: /\.ts?$/,
         loader: 'ts-loader',
         exclude: /node_modules/
+      },
+      {
+        test: /\.ts$/,
+        enforce: "post",
+        loader: "istanbul-instrumenter-loader",
+        exclude: [
+          "node_modules",
+          /index\.ts$/,
+          /\.spec\.ts$/
+        ],
+        query: {
+          esModules: true
+        }
       }
     ]
   }
