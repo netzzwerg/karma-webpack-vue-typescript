@@ -11,6 +11,7 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.js', '.json'],
     modules: [
+      __dirname,
       path.join(__dirname, 'src/lib'),
       'node_modules' // for chai and sinon
     ]
