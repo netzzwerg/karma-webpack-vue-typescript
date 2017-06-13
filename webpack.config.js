@@ -9,7 +9,11 @@ module.exports = {
     filename: 'build.js'
   },
   resolve: {
-    extensions: ['.ts', '.js', '.json']
+    extensions: ['.ts', '.js', '.json'],
+    modules: [
+      path.join(__dirname, 'src/lib'),
+      'node_modules' // for chai and sinon
+    ]
   },
   devtool: '#eval-source-map',
   module: {
